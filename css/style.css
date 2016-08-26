@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS 初始化 */
+html, body, div, ul, li, p, dl, dt, dd, form, table, tr, td, h1, h2, h3, h4, h5, h6, img, a, span, b, strong, em, i, input, label, textarea, select, option {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+body{ background: #f7f7f7;}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+/*主体*/
+.main{ width: 960px; height: auto; margin: 0 auto; padding-top: 500px;}
+.main:after{ content: "."; display: block; height: 0; visibility: hidden; clear: both;}
+.main_Left{ float: left; position: relative; width: 450px; height: auto;background: #fff; padding: 37px 0 10px 6px;}
+.main_bigImg{ position: absolute; top: 36px; left: 456px; width: 480px; height: 360px; border: #cecbce 1px solid; overflow: hidden;}
+
+.main_MiddleImg{ position: relative; width: 440px; height: 440px; overflow: hidden;}
+
+.main_board{ position: absolute; top: 0; left: 0; width: 263px; height: 197px;background: url("../images/btn_bg.png"); text-indent: -99em; overflow: hidden; cursor: move;}
+.main_smallImg { width: 440px; height: 60px; padding: 22px 0 0 13px;}
+.main_smallImg li{ float: left; position: relative; width: 58px; height: 58px; border: 1px solid #f7f7f7; margin-left: 19px; display: inline; cursor: pointer;}
+.main_smallImg li i{ position:absolute; top: -18px; left: 23px; width: 13px; height: 11px; background: url("../images/box_btn.png") no-repeat; overflow: hidden; text-indent: -99em; display: none; }
+.main_smallImg .main_imgCur{ border: #c6c3c6 1px solid;}
+.main_smallImg .main_imgCur i{ display: block;}
